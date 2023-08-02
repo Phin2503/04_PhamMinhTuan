@@ -8,10 +8,10 @@ CREATE TABLE `TRAINEE` (
     FullName VARCHAR(150),
     BirthDate DATE,
     Gender ENUM('nam', 'nu', 'gioi tinh thu 3'),
-    ET_IQ INT CHECK (ET_IQ >= 0 && ET_IQ <= 20),	
-    ET_Gmath INT CHECK (ET_Gmath >= 0 && ET_Gmath <= 20),
-    ET_English INT CHECK (ET_English >= 0 && ET_English <= 50),
-    ClassID INT,
+    ET_IQ tinyint CHECK (ET_IQ >= 0 && ET_IQ <= 20),	
+    ET_Gmath tinyint CHECK (ET_Gmath >= 0 && ET_Gmath <= 20),
+    ET_English tinyint CHECK (ET_English >= 0 && ET_English <= 50),
+    ClassID tinyint,
     EvaluationNote TEXT
 );
 

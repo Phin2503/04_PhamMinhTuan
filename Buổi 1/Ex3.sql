@@ -7,6 +7,6 @@ CREATE TABLE Customer (
 	ID INT auto_increment primary key,
     Name VARCHAR(50),
     BirthDate DATE,
-    Gender ENUM('nam', 'nu', 'khong xac dinh'),
+    Gender ENUM('0', '1', '2'),
     IsDeletedFlag BOOLEAN default 0
 );
